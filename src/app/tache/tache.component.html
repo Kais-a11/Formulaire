@@ -1,0 +1,29 @@
+<div class="container-fluid p-0 m-0 custom-background">
+    <div class="container">
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>IdTache</th>
+                            <th>Nom de Tache</th>
+                            <th>Date Création</th>
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let tache of taches">
+                        <tr>
+                            <td>{{ tache.idTache }}</td>
+                            <td>{{ tache.nomTache }}</td>
+                            <td>{{ tache.dateCreation | date:'dd/MM/yyyy' }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <input type="number" [(ngModel)]="idToDelete" placeholder="Entrez l'ID du Tache à supprimer">
+            <button type="button" (click)="supprimerTache(idToDelete)" class="btn btn-danger">Supprimer par ID</button>
+        </div>
+    </div>
+</div>

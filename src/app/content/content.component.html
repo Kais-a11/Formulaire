@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <div class="image-container">
+            <img src="/assets/images/welcome.jpg" class="img-fluid" alt="Description de l'image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <h2>Liste des offres d'emploi</h2>
+    <div *ngFor="let offre of offres">
+      <h3>{{ offre.titre }}</h3>
+      <p>{{ offre.description }}</p>
+      <a [routerLink]="['/description', offre.id]">Voir détails</a>
+      <hr>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+  

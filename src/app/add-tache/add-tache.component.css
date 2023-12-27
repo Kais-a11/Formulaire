@@ -1,0 +1,10 @@
+.custom-background {
+    background-image: url('/assets/images/img1.jpg'); /* Remplacez 'chemin_vers_votre_image.jpg' par le chemin de votre image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Utilisation de la hauteur de vue pour couvrir toute la fenêtre */
+}
+
+.text-white {
+    color: white; /* Définition de la couleur blanche */
+}

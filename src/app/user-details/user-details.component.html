@@ -1,0 +1,25 @@
+<div class="container">
+  <h1 style="color: blue;"><strong>Détails des utilisateurs</strong></h1>
+  <div *ngFor="let user of users; let i = index">
+    <div class="table-responsive">
+      <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">Nom complet</th>
+            <td>{{ user.fullname }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Email</th>
+            <td>{{ user.email }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Password</th>
+            <td>{{ user.password }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button class="btn btn-danger" (click)="onDelete(i)">Supprimer</button>
+    <button class="btn btn-primary" (click)="onEdit(i)">Modifier</button> <!-- Ajout du bouton Modifier -->
+  </div>
+</div>

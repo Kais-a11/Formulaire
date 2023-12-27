@@ -1,0 +1,32 @@
+<div class="container-fluid p-0 m-0 custom-background">
+    <div class="container text-white">
+        <div>
+            <h2>Ajouter une Tâche :</h2>
+        </div>
+        <form (ngSubmit)="addTache()">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="idTache">ID Tâche</label>
+                        <input type="text" [(ngModel)]="newTache.idTache" id="idTache" name="idTache" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="nomTache">Nom de Tâche</label>
+                        <input type="text" [(ngModel)]="newTache.nomTache" id="nomTache" name="nomTache" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="dateCreation">Date de création</label>
+                        <input type="date" [(ngModel)]="newTache.dateCreation" id="dateCreation" name="dateCreation" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="mt-2">
+                <button type="submit" class="btn btn-success">Ajouter</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+.custom-background {
+    background-image: url('/assets/images/img3.jpg'); /* Ajoutez le chemin vers votre image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Pour le texte blanc sur l'image de fond */
+}

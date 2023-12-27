@@ -1,0 +1,21 @@
+/* Styles pour le footer */
+footer {
+    background-color: #333; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    padding: 20px 0; /* Espacement intérieur du footer */
+  }
+  
+  footer p {
+    margin-bottom: 10px; /* Marge inférieure pour les paragraphes */
+  }
+  
+  /* Liens dans le footer */
+  footer a {
+    color: #fff; /* Couleur des liens */
+    text-decoration: none; /* Pas de soulignement */
+  }
+  
+  footer a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+  }
+  

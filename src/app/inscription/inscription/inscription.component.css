@@ -1,0 +1,9 @@
+.custom-margin-top {
+    margin-top: 100px;
+}
+
+.custom-background {
+    background-image: url('/assets/images/img2.jpg'); 
+    background-size: cover;
+    background-position: cover;
+}
